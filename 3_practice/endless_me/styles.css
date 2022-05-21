@@ -102,5 +102,12 @@ p {
     background-position: 50% 100%;
   }
 }
-.buddy {
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
 }

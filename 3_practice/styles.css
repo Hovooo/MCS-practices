@@ -3,16 +3,7 @@
   padding: 0px;
 }
 .header {
-  background: linear-gradient(
-    to right,
-    #ffcc33,
-    #33cccc,
-    #9966cc,
-    #ff33ff,
-    #3333ff
-  );
-  animation: gradient 10s ease infinite;
-  background-size: 200%;
+  background: #4db8be;
   width: 1440px;
   height: 200px;
   left: 0px;
@@ -61,23 +52,14 @@ p {
   background-repeat: no-repeat;
   width: 1440px;
   height: 1080px;
-  animation: hue 25s infinite linear;
+  animation: hue 20s infinite linear;
 }
 
 .links {
   width: 1360px;
   height: 150px;
   left: 0px;
-  background: linear-gradient(
-    20deg,
-    #ffcc33,
-    #33cccc,
-    #9966cc,
-    #ff33ff,
-    #3333ff
-  );
-  animation: gradient 10s ease infinite;
-  background-size: 300%;
+  background: #4db8be;
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
@@ -99,16 +81,7 @@ p {
   justify-content: space-between;
   width: 1440px;
   height: 200px;
-  background: linear-gradient(
-    45deg,
-    #ffcc33,
-    #33cccc,
-    #9966cc,
-    #ff33ff,
-    #3333ff
-  );
-  animation: gradient 10s ease infinite;
-  background-size: 300%;
+  background: #4db8be;
   align-items: center;
 }
 

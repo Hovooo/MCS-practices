@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+a:any-link {
+  color: white;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  padding: 80px 0px 0px 60px;
+  height: 100%;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+.one {
+  background: #ffffff;
+  color: #0000ff;
+}
+
+.two {
+  background: #0000ff;
+  color: #ffffff;
+}
+
+.three {
+  background: #ffffff;
+  color: #0000ff;
+}
+
+.four {
+  background: #0000ff;
+  color: #ffffff;
+}
+
+.five {
+  display: flex;
+  background: repeating-radial-gradient(
+    circle at 100%,
+    #333,
+    #333 10px,
+    #eee 10px,
+    #eee 50px
+  );
+  background-size: 600%;
+  animation: gradient 110s linear infinite;
+  padding: 0;
+  align-items: center;
+}
+
+.get {
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 60px;
+}
+
+.spotify {
+  width: 50px;
+  filter: invert(100%);
+}
+
+.mail {
+  filter: invert(100%);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+}
+.buddy {
+}

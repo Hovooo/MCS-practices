@@ -2,12 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body {
-  width: 1440px;
-}
+
 .header,
 .footer {
-  width: 1440px;
   height: 60px;
   background: #fe1a19;
   font-style: normal;

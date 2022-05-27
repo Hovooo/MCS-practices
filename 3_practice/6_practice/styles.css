@@ -46,11 +46,11 @@ h1 {
   }
   .block {
     min-height: 165px;
-    width: 330px;
-    margin: 25px;
+    width: 80%;
     align-items: center;
     justify-content: center;
     display: flex;
+    margin: 25px;
   }
 }
 
@@ -68,7 +68,7 @@ h1 {
   }
   .block {
     margin: 15px;
-    width: 40%;
+    width: 45%;
     min-height: 330px;
     align-items: center;
     justify-content: center;

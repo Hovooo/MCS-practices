@@ -4,7 +4,6 @@
 }
 .header {
   background: #4db8be;
-  width: 1440px;
   height: 200px;
   left: 0px;
   top: 0px;
@@ -21,9 +20,8 @@
 }
 
 .info {
-  width: 1280px;
-  height: 637px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .info h1 {
@@ -50,13 +48,11 @@ p {
   background-image: url(picture.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1440px;
   height: 1080px;
   animation: hue 10s infinite linear;
 }
 
 .links {
-  width: 1360px;
   height: 150px;
   left: 0px;
   background: #4db8be;
@@ -79,7 +75,6 @@ p {
   display: flex;
   color: white;
   justify-content: space-between;
-  width: 1440px;
   height: 200px;
   background: #4db8be;
   align-items: center;

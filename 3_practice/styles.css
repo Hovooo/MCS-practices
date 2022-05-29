@@ -2,7 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+
 .header {
+  width: 100%;
   background: #4db8be;
   height: 200px;
   left: 0px;
@@ -20,6 +22,7 @@
 }
 
 .info {
+  margin-right: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -35,6 +38,7 @@
 }
 
 p {
+  margin-right: 20px;
   font-size: 50px;
   font-family: "Helvetica";
   font-weight: 300;
@@ -44,16 +48,21 @@ p {
   margin-top: 30px;
 }
 
-#picture {
-  background-image: url(picture.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 1080px;
+.picture {
+  background: #4db8be;
+}
+
+img {
   animation: hue 10s infinite linear;
+  width: 100%;
 }
 
 .links {
-  height: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+
+  height: 100%;
   left: 0px;
   background: #4db8be;
   font-family: "Helvetica";
@@ -63,12 +72,12 @@ p {
   padding-left: 80px;
 }
 
-.links a {
-  line-height: 150px;
+.links > a {
   align-items: center;
   text-transform: uppercase;
   color: white;
   font-weight: 700;
+  padding: 10px 20px 10px 0px;
 }
 
 .footer {
@@ -87,7 +96,6 @@ p {
 }
 
 .footer h1 {
-  margin-right: 80px;
   font-size: 50px;
   font-family: "Helvetica";
   font-weight: 300;
@@ -123,31 +131,54 @@ p {
     -webkit-filter: hue-rotate(0deg);
   }
 }
-/* 
-@-webkit-keyframes filter-animation {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
+
+@media only screen and (max-width: 900px) {
+  .footer > h1 {
+    font-size: 0px;
+    visibility: hidden;
   }
 
-  50% {
-    -webkit-filter: hue-rotate(100deg);
+  .info h1 {
+    font-size: 20px;
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    margin-left: 80px;
+    color: black;
+    font-weight: 700;
   }
 
-  100% {
-    -webkit-filter: hue-rotate(0deg);
+  p {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: "Helvetica";
+    font-weight: 300;
+    margin-left: 80px;
+    color: black;
+    font-style: normal;
+    margin-top: 30px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+    line-height: 200px;
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    margin-left: 80px;
+    color: white;
+    font-weight: 700;
+  }
+  .links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+
+    height: 100%;
+    left: 0px;
+    background: #4db8be;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 80px;
   }
 }
-
-@keyframes filter-animation {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    filter: hue-rotate(100deg);
-  }
-
-  100% {
-    filter: hue-rotate(0deg);
-  }
-} */

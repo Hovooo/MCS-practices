@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #336fd1;
+}
+
+header {
+  background: #f8bfc7;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  font-family: "Helvetica";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left > h1 {
+  padding-left: 30px;
+}
+
+.header-left > h1:first-of-type {
+  padding-left: 0px;
+}
+
+.header-left > h1,
+.header-right > h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.form-box {
+  border: 1px solid black;
+  width: 300px;
+  background: #f8bfc7;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  font-family: "Helvetica";
+}
+
+.form {
+  padding-left: 40px;
+  padding-top: 70px;
+  padding-bottom: 10%;
+}
+
+.background {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+
+.text h1 {
+  font-family: "Helvetica";
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #feb700;
+  font-weight: 600;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  color: white;
+  background: #f8bfc7;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+  width: 100%;
+  font-family: "Helvetica";
+  font-size: 12px;
+  text-transform: uppercase;
+}
+footer > h1 {
+  font-weight: 100;
+}
+
+#full-name,
+#city,
+#gift,
+#email {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  border-left: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* To avoid stretching */
+  margin-bottom: 20px;
+}
+
+.form-box {
+  padding: 30px;
+}
+
+label {
+  padding-bottom: 18px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+::placeholder {
+  font-family: Times New Roman;
+  color: white;
+  font-size: 18px;
+}
+
+.form-row button {
+  background: #feb700;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 48px;
+  margin-top: 20px;
+  font-family: "Helvetica";
+  font-size: 20px;
+  color: white;
+}

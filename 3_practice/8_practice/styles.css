@@ -46,7 +46,7 @@ header {
 
 .form-box {
   border: 1px solid black;
-  width: 300px;
+  width: 310px;
   background: #f8bfc7;
   border: 3px solid #ffffff;
   border-radius: 20px;
@@ -110,6 +110,7 @@ footer > h1 {
 #city,
 #gift,
 #email {
+  padding-bottom: 10px;
   border-top: none;
   border-right: none;
   border-bottom: 1px solid white;
@@ -153,4 +154,68 @@ label {
   font-family: "Helvetica";
   font-size: 20px;
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .header-left > h1 {
+    padding-left: 15px;
+  }
+
+  .background {
+    background-image: url("background_mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text h1 {
+    font-family: "Helvetica";
+    font-size: 35px;
+    padding: 30px;
+
+    text-align: center;
+    color: #feb700;
+    font-weight: 600;
+    justify-content: center;
+  }
+  .form {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  .text {
+    height: 220px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .header-right {
+    margin-left: 20px;
+  }
+
+  header {
+    background: #f8bfc7;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 50px 20px 20px;
+    font-family: "Helvetica";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
 }

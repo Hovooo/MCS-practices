@@ -145,7 +145,7 @@ section {
   }
 
   p {
-    font-size: 100px;
+    font-size: 60px;
   }
 }
 
@@ -193,7 +193,7 @@ section {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 960px) {
   section {
     height: 100%;
   }

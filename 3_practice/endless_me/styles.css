@@ -187,6 +187,10 @@ section {
   section {
     height: 150%;
   }
+
+  h1 {
+    font-size: 80px;
+  }
   p {
     font-size: 30px;
   }

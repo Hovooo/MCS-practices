@@ -215,7 +215,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 150%;
+  height: 110%;
 }
 
 @keyframes gradient {

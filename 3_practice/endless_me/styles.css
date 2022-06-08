@@ -1,6 +1,93 @@
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Ultralight.eot");
+  src: local("Neue Machina Ultralight"), local("NeueMachina-Ultralight"),
+    url("NeueMachina-Ultralight.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Ultralight.woff2") format("woff2"),
+    url("NeueMachina-Ultralight.woff") format("woff"),
+    url("NeueMachina-Ultralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Light.eot");
+  src: local("Neue Machina Light"), local("NeueMachina-Light"),
+    url("NeueMachina-Light.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Light.woff2") format("woff2"),
+    url("NeueMachina-Light.woff") format("woff"),
+    url("NeueMachina-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Black.eot");
+  src: local("Neue Machina Black"), local("NeueMachina-Black"),
+    url("NeueMachina-Black.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Black.woff2") format("woff2"),
+    url("NeueMachina-Black.woff") format("woff"),
+    url("NeueMachina-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Regular.eot");
+  src: local("Neue Machina Regular"), local("NeueMachina-Regular"),
+    url("NeueMachina-Regular.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Regular.woff2") format("woff2"),
+    url("NeueMachina-Regular.woff") format("woff"),
+    url("NeueMachina-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Bold.eot");
+  src: local("Neue Machina Bold"), local("NeueMachina-Bold"),
+    url("NeueMachina-Bold.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Bold.woff2") format("woff2"),
+    url("NeueMachina-Bold.woff") format("woff"),
+    url("NeueMachina-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Medium.eot");
+  src: local("Neue Machina Medium"), local("NeueMachina-Medium"),
+    url("NeueMachina-Medium.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Medium.woff2") format("woff2"),
+    url("NeueMachina-Medium.woff") format("woff"),
+    url("NeueMachina-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Ultrabold.eot");
+  src: local("Neue Machina Ultrabold"), local("NeueMachina-Ultrabold"),
+    url("NeueMachina-Ultrabold.eot?#iefix") format("embedded-opentype"),
+    url("NeueMachina-Ultrabold.woff2") format("woff2"),
+    url("NeueMachina-Ultrabold.woff") format("woff"),
+    url("NeueMachina-Ultrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+pre {
+  max-width: 100%;
 }
 
 html,
@@ -33,7 +120,7 @@ a:any-link {
 }
 
 body {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Neue Machina";
   font-weight: normal;
   font-size: 100%;
 }
@@ -41,21 +128,25 @@ body {
 .one {
   background: #ffffff;
   color: #0000ff;
+  border: 10px #0000ff solid;
 }
 
 .two {
   background: #0000ff;
   color: #ffffff;
+  border: 10px #ffffff solid;
 }
 
 .three {
   background: #ffffff;
   color: #0000ff;
+  border: 10px #0000ff solid;
 }
 
 .four {
   background: #0000ff;
   color: #ffffff;
+  border: 10px #ffffff solid;
 }
 
 .five {
@@ -98,11 +189,17 @@ h1 {
   font-size: 200px;
   margin: 0px;
   padding: 0px;
+  font-weight: 900;
+  text-shadow: 1px 5px 1px black;
 }
 
 p {
+  padding-top: 80px;
   font-size: 70px;
   width: 90%;
+  font-weight: 300;
+  line-height: 60px;
+  text-shadow: 1px 0.5px 0.5px black;
 }
 
 .spotify {
@@ -139,7 +236,7 @@ section {
   }
 }
 
-@media (min-width: 806px) {
+@media (min-width: 821px) {
   h1 {
     font-size: 200px;
   }
@@ -149,33 +246,35 @@ section {
   }
 }
 
-@media (min-width: 606px) and (max-width: 805px) {
+@media (min-width: 606px) and (max-width: 820px) {
   h1 {
-    font-size: 150px;
-  }
-
-  p {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 605px) {
-  h1 {
-    font-size: 100px;
+    font-size: 110px;
   }
 
   p {
     font-size: 40px;
+    line-height: 50px;
   }
 }
 
-@media (max-width: 450px) {
-  .five h1 {
-    font-size: 65px;
+@media (min-width: 401px) and (max-width: 605px) {
+  h1 {
+    font-size: 80px;
   }
 
+  p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  section {
+    height: 130%;
+  }
+}
+
+@media (max-width: 400px) {
   h1 {
-    font-size: 100px;
+    font-size: 70px;
   }
   .five > a:any-link {
     color: white;
@@ -184,7 +283,8 @@ section {
   }
 
   p {
-    font-size: 35px;
+    font-size: 30px;
+    line-height: 35px;
   }
 
   .spotify {
@@ -198,6 +298,6 @@ section {
     height: 150%;
   }
   p {
-    font-size: 30px;
+    font-size: 50px;
   }
 }

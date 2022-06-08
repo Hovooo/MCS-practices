@@ -1,7 +1,3 @@
-
-
-
-
 var doc = window.document,
   context = doc.querySelector(".js-loop"),
   clones = context.querySelectorAll(".is-clone"),

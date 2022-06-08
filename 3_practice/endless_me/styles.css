@@ -7,6 +7,7 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+  background: #0000ff;
 }
 
 ::-webkit-scrollbar {
@@ -16,16 +17,19 @@ a:any-link {
   color: white;
 }
 
+a:any-link {
+  color: white;
+}
+
+.one a:any-link {
+  color: #0000ff;
+}
+
 .Loop {
   position: relative;
   height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
-
-section {
-  padding: 80px 0px 0px 60px;
-  height: 100%;
 }
 
 body {
@@ -55,24 +59,39 @@ body {
 }
 
 .five {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: repeating-radial-gradient(
     circle at 100%,
-    #333,
-    #333 10px,
-    #eee 10px,
-    #eee 50px
+    black,
+    black 10px,
+    white 10px,
+    white 50px
   );
-  background-size: 600%;
+  background-size: 300%;
   animation: gradient 110s linear infinite;
-  padding: 0;
-  align-items: center;
 }
 
-.get {
-  text-align: center;
-  margin: auto;
+.five > a:any-link {
+  color: white;
+  text-shadow: 10px 5px black;
   text-decoration: none;
+  text-align: center;
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px 0px 50px;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -82,16 +101,24 @@ h1 {
 }
 
 p {
-  font-size: 60px;
+  font-size: 100px;
+  width: 90%;
 }
 
 .spotify {
-  width: 50px;
+  width: 40px;
   filter: invert(100%);
 }
 
 .mail {
   filter: invert(100%);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
 }
 
 @keyframes gradient {
@@ -109,5 +136,58 @@ p {
   }
   50% {
     background-position: 50% 100%;
+  }
+}
+
+@media (min-width: 606px) and (max-width: 805px) {
+  h1 {
+    font-size: 150px;
+  }
+
+  p {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 605px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .five h1 {
+    font-size: 65px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+  .five > a:any-link {
+    color: white;
+    text-shadow: 6px 5px black;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 35px;
+  }
+
+  .spotify {
+    width: 28px;
+    filter: invert(100%);
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  section {
+    height: 150%;
+  }
+  p {
+    font-size: 50px;
   }
 }

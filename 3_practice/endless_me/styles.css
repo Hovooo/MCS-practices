@@ -193,7 +193,7 @@ section {
   }
 }
 
-@media (orientation: landscape) and (max-width: 806px) {
+@media (orientation: landscape) and (min-width: 680px) {
   section {
     height: 100%;
   }

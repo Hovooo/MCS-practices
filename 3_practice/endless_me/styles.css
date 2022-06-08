@@ -236,7 +236,7 @@ section {
   }
 }
 
-@media (min-width: 821px) {
+@media (min-width: 861px) {
   h1 {
     font-size: 150px;
   }
@@ -246,7 +246,7 @@ section {
   }
 }
 
-@media (min-width: 606px) and (max-width: 820px) {
+@media (min-width: 606px) and (max-width: 860px) {
   h1 {
     font-size: 110px;
   }

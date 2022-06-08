@@ -185,13 +185,9 @@ section {
 
 @media only screen and (orientation: landscape) {
   section {
-    height: 150%;
-  }
-
-  h1 {
-    font-size: 80px;
+    height: 200%;
   }
   p {
-    font-size: 30px;
+    font-size: 80px;
   }
 }

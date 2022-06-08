@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   overflow: hidden;
-  background: #0000ff;
+  background: white;
 }
 
 ::-webkit-scrollbar {
